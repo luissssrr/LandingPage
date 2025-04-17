@@ -1,77 +1,70 @@
-/* *********** Custom Properties *********** */
 :root {
-    --first-color: #388E3C;
-    --first-alpha-color: #388E3CBF;
-
-    --second-color: #81C784;
-    --second-alpha-color: #81C784BF;
-
-    --third-color: #E3F2FD;
-    --third-alpha-color: #E3F2FDBF;
-
-    --maintext-color: #212121;
-    --maintext-alpha-color: #212121BF;
-
-    --paragraphtext-color: #424242;
-    --paragraphtext-alpha-color: #424242BF;
-
-}
-
-.background {
-    background-color: black;
-}
-
-.btn-outline-light {
-    background-color: var(--first-color) !important; /* celeste tipo Bootstrap Primary */
+    --first-color: #307d33;
+  
+    --second-color: #53c758;
+  }
+  
+  * {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .background {
+    background-color: white;
+  }
+  
+  .btn-outline-light {
+    background-color: var(
+      --first-color
+    ) !important; 
     border-color: var(--first-color) !important;
     color: #fff !important;
-}
-
-.btn-outline-light:hover {
-    background-color: var(--second-color) !important; /* celeste tipo Bootstrap Primary */
+  }
+  
+  .btn-outline-light:hover {
+    background-color: var(
+      --second-color
+    ) !important;
     border-color: var(--second-color) !important;
     color: #fff !important;
-}
-
-
-.bg-primary{
-    background-color: var(--second-color)!important;
-}
-
-.bg-secundary{
-    background-color: var(--first-color)!important;
-}
-
-
-.card-dark {
+  }
+  
+  .bg-primary {
+    background-color: var(--second-color) !important;
+  }
+  
+  .bg-secundary {
+    background-color: var(--first-color) !important;
+  }
+  
+  .card-dark {
     background-color: black;
     border: 1px solid white;
     color: white;
-}
-
-.container h1{
+  }
+  
+  .container h1 {
     color: var(--first-color);
-}
-
-.container h2{
+  }
+  
+  .container h2 {
     color: var(--second-color);
-}
-
-.container p {
+  }
+  
+  .container p {
     color: white;
-}
-
-.form-label {
+  }
+  
+  .form-label {
     color: var(--second-color);
-}
-
-.hero-section {
-    background: url(../images/portada.jpg) no-repeat center;
+  }
+  
+  .hero-section {
+    background: url(/images/portada.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
-}
-
-.hero-section::before {
+  }
+  
+  .hero-section::before {
     background-color: rgba(0, 0, 0, 0.6);
     content: "";
     position: absolute;
@@ -79,23 +72,39 @@
     right: 0;
     bottom: 0;
     left: 0;
-}
-
-.hero-section .container {
+  }
+  
+  .hero-section .container {
     height: 100vh;
     z-index: 1;
     position: relative;
-}
-
-.hero-section h3 {
-    font-size: 0.8em;
-}
-
-.hero-section p {
-    font-size: 0.6em;
-}
-
-.login-button {
+  }
+  
+  .hero-section h3 {
+    font-size: 80px; 
+    font-weight: 700;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-section p {
+    font-size: 1rem; 
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-section a {
+    font-size: 20px;
+  }
+  
+  .signin-button:hover {
+    background-color: var(--second-color);
+  }
+  
+  .login-button {
     background-color: var(--first-color);
     color: white;
     font-size: 14px;
@@ -103,63 +112,70 @@
     border-radius: 50px;
     text-decoration: none;
     transition: 0.3s background-color;
-}
-
-.login-button:hover{
+  }
+  
+  .login-button:hover {
     background-color: var(--second-color);
-}
-
-.navbar {
+  }
+  
+  .navbar {
     background-color: white;
     height: 80px;
     margin: 20px;
     border-radius: 16px;
     padding: 0.5rem;
-}
-
-.navbar-brand {
+  }
+  
+  .navbar-brand {
     font-weight: 300;
     font-size: 24px;
-}
-
-.navbar-toggler {
+  }
+  
+  .navbar-toggler {
     border: none;
     font-size: 1.25rem;
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%231565C0' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-toggler:hover {
+  }
+  
+  .navbar-toggler:hover {
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2342A5F5' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     transition: 0.3s ease-in-out;
-}
-
-.navbar-toggler:focus, .btn-close:focus{
+  }
+  
+  .navbar-toggler:focus,
+  .btn-close:focus {
     box-shadow: none;
     outline: none;
-}
-
-.nav-link {
+  }
+  
+  .nav-link {
     color: black;
     font-weight: 500;
     position: relative;
-}
-
-.nav-link:hover, .nav-link.active{
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
     color: var(--second-color);
-}
-
-.precio-card {
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .precio-card {
     border-radius: 50px;
     padding: 6rem;
     height: 100%;
     transition: transform 0.3s ease-in-out;
-}
-
-.precio-card:hover {
+  }
+  
+  .precio-card:hover {
     transform: scale(1.03);
-}
-
-.signin-button {
+  }
+  
+  .signin-button {
     background-color: var(--first-color);
     color: white;
     font-size: 30px;
@@ -167,53 +183,261 @@
     border-radius: 50px;
     text-decoration: none;
     transition: 0.3s background-color;
-}
-
-.signin-button:hover{
+  }
+  
+  .signin-button:hover {
     background-color: var(--second-color);
-}
-
-.text-food {
-    color: var(--first-color); 
-}
-
-.text-heaven {
+  }
+  
+  .text-food {
+    color: var(--first-color);
+  }
+  
+  .text-heaven {
     color: black;
-}
-
-
-@media (min-width: 576px) { 
-
-}
-
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 992px) {
+  }
+  
+  @media (min-width: 576px) {
+  }
+  
+  @media (min-width: 768px) {
+  }
+  
+  @media (min-width: 992px) {
     .nav-link::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 2px;
-        background-color: var(--first-color);
-        visibility: hidden;
-        transition: 0.3s ease-in-out;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: var(--first-color);
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
     }
-    
-    .nav-link:hover::before, .nav-link.active::before {
-        width: 100%;
-        visibility: visible;
+  
+    .nav-link:hover::before,
+    .nav-link.active::before {
+      width: 100%;
+      visibility: visible;
     }
-}
-
-@media (min-width: 1200px) {
-
-}
-
-@media (min-width: 1400px) {
-    
-}
+  }
+  
+  @media (min-width: 1200px) {
+  }
+  
+  @media (min-width: 1400px) {
+  }
+  
+  .mision p,
+  .quien p {
+    color: gray;
+  }
+  
+  .servicio p {
+    color: gray;
+  }
+  
+  .servicio {
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .precio-f li {
+    color: gray;
+  }
+  
+  .precio-f h3 {
+    color: black;
+  }
+  
+  .texto-reseña p {
+    color: black;
+  }
+  .bg-gray {
+    background-color: gray;
+  }
+  
+  .hero-section {
+    background-image: url(/images/fondo_comida.jpg);
+    background-repeat: no-repeat;
+  }
+  
+  .footer {
+    background-image: url(/images/fondo_comida2.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #acerca {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    margin: 0 auto; 
+    padding: 3rem 1rem;
+    border-radius: 40px; 
+    margin-top: 20px;
+  }
+  
+  #acerca .fondo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  #acerca .container {
+    position: relative;
+    z-index: 1;
+    padding: 5rem 1rem;
+  }
+  
+  #acerca {
+    border-radius: 200px;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .acerca-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .acerca-img,
+  .acerca-texto {
+    flex: 1 1 50%;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .acerca-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .acerca-texto {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .acerca-texto p {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .portada-button {
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: var(--first-color);
+    color: white;
+    transition: 0.3s background-color;
+    padding: 10px 20px;
+  }
+  
+  .portada-button:hover {
+    background-color: var(--second-color);
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .acerca-contenido {
+      flex-direction: column;
+    }
+  
+    .acerca-img {
+      display: none; /* esto oculta el lomo saltado en el responsive cuando sea pequeño */
+    }
+  
+    .acerca-texto {
+      flex: 1 1 100%;
+    }
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .hero-subtitle {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-button {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+  }
+  
+  .hero-button:hover {
+    background-color: var(--second-color);
+    color: white;
+  }
+  
+  .precio-card {
+    border-radius: 30px;
+    padding: 40px 25px;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .precio-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .precio-card .card-title {
+    white-space: normal !important; 
+    overflow: visible !important;
+    text-overflow: unset !important; 
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .precio-card .price {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  .precio-f ul {
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .precio-f ul li {
+    text-align: left;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 576px) {
+    .precio-card {
+      padding: 25px 15px;
+    }
+  
+    .precio-card .card-title {
+      font-size: 1.1rem;
+    }
+  
+    .precio-card .price {
+      font-size: 1.1rem;
+    }
+  }
