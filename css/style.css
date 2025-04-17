@@ -59,7 +59,7 @@
 }
 
 .hero-section {
-  background: url(/images/portada.jpg) no-repeat center;
+  background: url(../images/imagenPortada.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
 }
