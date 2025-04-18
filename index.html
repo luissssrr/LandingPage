@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
+    <link rel="icon" href="images/.png" alt="Logo" />
     <link rel="icon" href="./images/logo.png" alt="Logo" />
 
     <link
@@ -31,6 +32,7 @@
       <div class="container-xxl">
         <a class="navbar-brand me-auto" href="#">
           <img
+            src="/images/FoodHeavenLogo.png"
             src="./images/logo.png"
             alt="Logo"
             width="50"
@@ -49,6 +51,7 @@
           <div class="offcanvas-header">
             <a class="navbar-brand" href="#">
               <img
+                src="images/FoodHeavenLogo.png"
                 src="./images/logo.png"
                 alt="Logo"
                 width="30"
@@ -125,6 +128,24 @@
     <section id="acerca">
       <div class="acerca-contenido">
         <div class="acerca-img">
+          <img src="images/imagenPortada.jpg" alt="Comida" />
+        </div>
+        <div class="acerca-texto">
+          <img
+            src="/images/FoodHeavenLogo.png"
+            alt="Logo"
+            width="80"
+            class="mb-3"
+          />
+          <p>
+            FoodHeaven es una plataforma web que transforma la forma en que
+            organizas tus comidas semanales. Elige entre una amplia variedad de
+            opciones para desayuno, almuerzo y cena, personalizadas según tus
+            preferencias, objetivos nutricionales y estilo de vida. Simplifica
+            tu rutina, come mejor y disfruta cada bocado.
+          </p>
+          <a href="#" class="portada-button">Registrate</a>
+        </div>
           <img src="./images/imagenPortada.jpg" alt="Comida" />
         </div>
         <div class="acerca-texto">
@@ -234,6 +255,134 @@
       </div>
     </section>
 
+<!-- ¿Cómo Funciona? -->
+<section class="container mt-5" id="comofunciona">
+  <h1 class="text-center mb-4">¿Cómo Funciona?</h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 text-center servicio">
+        <div class="card-body">
+          <i class="bi bi-person-plus-fill display-4 mb-3"></i>
+          <h2 class="card-title">Crea tu Cuenta</h2>
+          <p class="card-text">
+            Regístrate de manera rápida y fácil desde cualquier dispositivo para acceder a tu plan de comidas personalizado.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center servicio">
+        <div class="card-body">
+          <i class="bi bi-heart display-4 mb-3"></i>
+          <h2 class="card-title">Configura tus Preferencias</h2>
+          <p class="card-text">
+            Indica tus gustos, restricciones alimenticias, y objetivos nutricionales para que el sistema cree el mejor plan para ti.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center servicio">
+        <div class="card-body">
+          <i class="bi bi-calendar-event display-4 mb-3"></i>
+          <h2 class="card-title">Recibe tu Plan Semanal</h2>
+          <p class="card-text">
+            Obtén un menú semanal adaptado a tus necesidades, incluyendo desayuno, almuerzo y cena, listo para planificar.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center servicio">
+        <div class="card-body">
+          <i class="bi bi-cart-check display-4 mb-3"></i>
+          <h2 class="card-title">Proveedores de Confianza</h2>
+          <p class="card-text">
+            Trabajamos con cocineros independientes y restaurantes locales verificados para garantizar calidad, sabor y frescura en cada comida.
+          </p>
+        </div>
+      </div>
+    </div>    
+    <div class="col">
+      <div class="card h-100 text-center servicio">
+        <div class="card-body">
+          <i class="bi bi-basket display-4 mb-3"></i>
+          <h2 class="card-title">Recibe tus Comidas</h2>
+          <p class="card-text">
+            Disfruta tus platos listos sin cocinar. Nosotros coordinamos con los proveedores y nos encargamos de la entrega.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center servicio">
+        <div class="card-body">
+          <i class="bi bi-graph-up display-4 mb-3"></i>
+          <h2 class="card-title">Rastrea tu Progreso</h2>
+          <p class="card-text">
+            Monitorea tu progreso nutricional y ajusta tus planes según tus preferencias.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Sección de Precios -->
+    <section class="container my-5" id="precios">
+      <h1 class="text-center mb-4">Precios</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <!-- Plan Estándar -->
+        <div class="col d-flex">
+          <div
+            class="card text-center precio-card w-100 text-white border-green precio-f"
+          >
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h2 class="card-title nowrap">Plan Estándar</h2>
+                <h3 class="card-subtitle text-black price nowrap">
+                  S/ 400.00 / mes
+                </h3>
+                <ul class="list-unstyled mt-4 mb-4 text-start mx-auto">
+                  <li>✓ Incluye almuerzo diario</li>
+                  <li>✓ Control nutricional con contador de calorías</li>
+                  <li>✓ Acceso completo a planificación y entregas</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-outline-light rounded-pill mt-auto"
+                >Elegir plan</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan Tempranero -->
+        <div class="col d-flex">
+          <div
+            class="card text-center precio-card w-100 text-white border-green precio-f"
+          >
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h2 class="card-title nowrap">Plan Tempranero</h2>
+                <h3 class="card-subtitle text-black price nowrap">
+                  S/ 500.00 / mes
+                </h3>
+                <ul class="list-unstyled mt-4 mb-4 text-start mx-auto">
+                  <li>✓ Incluye desayuno y almuerzo</li>
+                  <li>✓ Control nutricional con contador de calorías</li>
+                  <li>✓ Acceso completo a planificación y entregas</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-outline-light rounded-pill mt-auto"
+                >Elegir plan</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan Bajadón -->
+
     <!-- ¿Cómo Funciona? -->
     <section class="container mt-5" id="comofunciona">
       <h1 class="text-center mb-4">¿Cómo Funciona?</h1>
@@ -324,6 +473,12 @@
           >
             <div class="card-body d-flex flex-column justify-content-between">
               <div>
+                <h2 class="card-title nowrap">Plan Bajadón</h2>
+                <h3 class="card-subtitle text-black price nowrap">
+                  S/ 800.00 / mes
+                </h3>
+                <ul class="list-unstyled mt-4 mb-4 text-start mx-auto">
+                  <li>✓ Incluye almuerzo y cena</li>
                 <h2 class="card-title nowrap">Plan Estándar</h2>
                 <h3 class="card-subtitle text-black price nowrap">
                   S/ 400.00 / mes
@@ -341,6 +496,7 @@
           </div>
         </div>
 
+        <!-- Plan Full -->
         <!-- Plan Tempranero -->
         <div class="col d-flex">
           <div
@@ -348,6 +504,15 @@
           >
             <div class="card-body d-flex flex-column justify-content-between">
               <div>
+                <h2 class="card-title nowrap">Plan Full</h2>
+                <h3 class="card-subtitle text-black price nowrap">
+                  S/ 1000.00 / mes
+                </h3>
+                <ul class="list-unstyled mt-4 mb-4 text-start mx-auto">
+                  <li>✓ Incluye desayuno, almuerzo y cena</li>
+                  <li>✓ Control nutricional con contador de calorías</li>
+                  <li>✓ Acceso completo a planificación y entregas</li>
+                  <li>✓ Soporte al cliente prioritario</li>
                 <h2 class="card-title nowrap">Plan Tempranero</h2>
                 <h3 class="card-subtitle text-black price nowrap">
                   S/ 500.00 / mes
@@ -364,6 +529,7 @@
             </div>
           </div>
         </div>
+
 
         <!-- Plan Bajadón -->
         <div class="col d-flex">
@@ -544,6 +710,11 @@
               <label for="numero" class="form-label">Número</label>
               <input type="tel" class="form-control" id="numero" required />
             </div>
+            </div>
+            <div class="mb-3">
+              <label for="numero" class="form-label">Número</label>
+              <input type="tel" class="form-control" id="numero" required />
+            </div>
             <button
               type="submit"
               class="btn btn-outline-light rounded-pill w-100"
@@ -645,4 +816,6 @@
     <script src="js/javascript.js"></script>
     
   </body>
+</html>
+
 </html>
