@@ -32,10 +32,6 @@
   background-color: var(--second-color) !important;
 }
 
-.bg-secundary {
-  background-color: var(--first-color) !important;
-}
-
 .card-dark {
   background-color: black;
   border: 1px solid white;
