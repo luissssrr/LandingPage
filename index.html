@@ -1,471 +1,643 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>FoodHeaven</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/foodheaven.png" alt="Logo">
-</head>
 
-<body class="background">
-    <!-- Navbar -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" href="images/.png" alt="Logo" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="background">
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-xxl">
-            <a class="navbar-brand me-auto" href="#">
-                <img src="images/foodheaven" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                <span class="text-food">Food</span><span class="text-heaven">Heaven</span>
+      <div class="container-xxl">
+        <a class="navbar-brand me-auto" href="#">
+          <img
+            src="/images/FoodHeavenLogo.png"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="d-inline-block align-text-top"
+          />
+          <span class="text-food">Food</span
+          ><span class="text-heaven">Heaven</span>
+        </a>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <a class="navbar-brand" href="#">
+              <img
+                src="images/FoodHeavenLogo.png"
+                alt="Logo"
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+              <span class="text-food">Food</span
+              ><span class="text-heaven">Heaven</span>
             </a>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/foodheaven" alt="Logo" width="30" height="24"
-                            class="d-inline-block align-text-top">
-                        <span class="text-food">Split</span><span class="text-heaven">Easy</span>
-                    </a>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#acerca">Acerca de</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#servicios">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#comofunciona">¿Cómo funciona?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#precios">Precios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#reseñas">Reseñas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#contactanos">Contáctanos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <a href="#" class="login-button">Iniciar Sesión</a>
-            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#acerca">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#comofunciona"
+                  >¿Cómo funciona?</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#precios">Precios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#reseñas">Reseñas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#contactanos">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <a href="#" class="login-button">Iniciar Sesión</a>
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container d-flex align-items-center justify-content-center fs-1
-        text-white flex-column">
-            <h3 class="text-center">FoodHeaven es una plataforma web que transforma la forma en que organizas tus
-                comidas semanales.
-                Elige entre una amplia variedad de opciones para desayuno, almuerzo y cena, personalizadas según tus
-                preferencias,
-                objetivos nutricionales y estilo de vida. Simplifica tu rutina, come mejor y disfruta cada bocado.</h3>
-            <p>Tu semana, tus platos. Alimentación inteligente con FoodHeaven.</p>
-            <a href="#" class="signin-button">Registrate</a>
-        </div>
+      <div
+        class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column"
+      >
+        <h3 class="text-center">
+          Come bien, sin pensar de más. FoodHeaven lo hace por ti.
+        </h3>
+        <p>Tu semana, tus platos. Alimentación inteligente con FoodHeaven.</p>
+        <a href="#" class="signin-button">Registrate</a>
+      </div>
     </section>
 
-    <!-- Acerca De Section -->
-    <section class="container mt-5" id="acerca">
-        <div class="row text-center">
-            <h1 class="center">Acerca De</h1>
-            <div class="col-md-6">
-                <h2>Misión</h2>
-                <p>FoodHeaven facilita la organización de comidas semanales en Perú mediante una plataforma digital
-                    intuitiva,
-                    conectando a usuarios con proveedores de comida bajo un modelo de suscripción personalizado y
-                    saludable.</p>
-
-                <h2>Visión</h2>
-                <p>Ser la plataforma líder en Perú en planificación y entrega de comidas personalizadas, promoviendo una
-                    alimentación saludable
-                    y organizada para mejorar la calidad de vida de nuestros usuarios.</p>
-                <h2>¿Por qué nace FoodHeaven?</h2>
-                <p>FoodHeaven nace como respuesta a la falta de tiempo, planificación y opciones saludables que
-                    enfrentan muchas
-                    personas en su día a día. Nuestro objetivo es facilitar la organización de comidas semanales
-                    mediante una plataforma
-                    digital intuitiva, conectando a los usuarios con proveedores confiables y promoviendo una
-                    alimentación equilibrada y práctica.</p>
-            </div>
-            <div class="col-md-6">
-                <h2>¿Quiénes somos?</h2>
-                <p><strong>EuroCausas</strong> es una startup liderada por estudiantes de la Universidad Peruana de
-                    Ciencias Aplicadas (UPC),
-                    dedicada a transformar la forma en que las personas organizan sus comidas diarias a través de
-                    soluciones
-                    digitales prácticas y personalizadas. Con el objetivo de brindar una alternativa eficiente y
-                    accesible para
-                    la gestión alimentaria, se ha desarrollado el proyecto FoodHaven, una innovadora plataforma web que
-                    facilita
-                    la organización de comidas semanales mediante un sistema de suscripción flexible.
-
-                <p>En <strong>EuroCausas</strong>, creemos que la buena alimentación es clave para una vida equilibrada,
-                    productiva y saludable.
-                    Sabemos que muchas personas enfrentan el desafío del tiempo y la planificación, por ello FoodHeaven
-                    busca
-                    convertirse en el aliado ideal para quienes desean resolver sus comidas de manera práctica, sin
-                    renunciar
-                    a la calidad ni al sabor. La plataforma permite combinar planes personalizados, reservar comidas
-                    especiales,
-                    elegir horarios de entrega y llevar un control nutricional mediante funciones como el contador de
-                    calorías y
-                    el seguimiento de dietas.</p>
-            </div>
+    <!-- Acerca De-->
+    <section id="acerca">
+      <div class="acerca-contenido">
+        <div class="acerca-img">
+          <img src="images/imagenPortada.jpg" alt="Comida" />
         </div>
+        <div class="acerca-texto">
+          <img
+            src="/images/FoodHeavenLogo.png"
+            alt="Logo"
+            width="80"
+            class="mb-3"
+          />
+          <p>
+            FoodHeaven es una plataforma web que transforma la forma en que
+            organizas tus comidas semanales. Elige entre una amplia variedad de
+            opciones para desayuno, almuerzo y cena, personalizadas según tus
+            preferencias, objetivos nutricionales y estilo de vida. Simplifica
+            tu rutina, come mejor y disfruta cada bocado.
+          </p>
+          <a href="#" class="portada-button">Registrate</a>
+        </div>
+      </div>
     </section>
 
-    <!-- Servicios Section -->
+    <!-- Servicios -->
     <section class="container mt-5" id="servicios">
-        <h1 class="text-center mb-4">Servicios</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-
-            <!-- Planificación Personalizada -->
-            <div class="col">
-                <div class="card card-dark h-100 text-center">
-                    <div class="card-body">
-                        <i class="bi bi-calendar-check display-4 mb-3"></i>
-                        <h2 class="card-title">Planificación Semanal</h2>
-                        <p class="card-text">Organiza tus comidas de la semana según tus necesidades nutricionales y
-                            preferencias personales.</p>
-                    </div>
-                </div>
+      <h1 class="text-center mb-4">Servicios</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 text-center servicio">
+            <div class="card-body">
+              <i class="bi bi-calendar-check display-4 mb-3"></i>
+              <h2 class="card-title">Planificación Semanal</h2>
+              <p class="card-text">
+                Organiza tus comidas de la semana según tus necesidades
+                nutricionales y preferencias personales.
+              </p>
             </div>
-
-            <!-- Selección de Proveedores -->
-            <div class="col">
-                <div class="card card-dark h-100 text-center">
-                    <div class="card-body">
-                        <i class="bi bi-shop-window display-4 mb-3"></i>
-                        <h2 class="card-title">Proveedores Personalizados</h2>
-                        <p class="card-text">Conéctate con una red diversa de proveedores que se adaptan a tus gustos y
-                            estilo de vida.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Control Nutricional -->
-            <div class="col">
-                <div class="card card-dark h-100 text-center">
-                    <div class="card-body">
-                        <i class="bi bi-heart-pulse-fill display-4 mb-3"></i>
-                        <h2 class="card-title">Control Nutricional</h2>
-                        <p class="card-text">Sigue tu dieta con un contador de calorías y balance nutricional adaptado a
-                            tus objetivos.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Entregas Flexibles -->
-            <div class="col">
-                <div class="card card-dark h-100 text-center">
-                    <div class="card-body">
-                        <i class="bi bi-truck display-4 mb-3"></i>
-                        <h2 class="card-title">Entrega a Domicilio</h2>
-                        <p class="card-text">Recibe tus comidas en el horario que prefieras, directamente en tu casa u
-                            oficina.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Reservas Especiales -->
-            <div class="col">
-                <div class="card card-dark h-100 text-center">
-                    <div class="card-body">
-                        <i class="bi bi-star-fill display-4 mb-3"></i>
-                        <h2 class="card-title">Comidas Especiales</h2>
-                        <p class="card-text">Reserva platos únicos para ocasiones especiales o antojos de la semana.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Suscripción Flexible -->
-            <div class="col">
-                <div class="card card-dark h-100 text-center">
-                    <div class="card-body">
-                        <i class="bi bi-credit-card-2-front-fill display-4 mb-3"></i>
-                        <h2 class="card-title">Planes de Suscripción</h2>
-                        <p class="card-text">Elige entre diferentes planes mensuales según la cantidad de comidas y
-                            servicios que necesitas.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!-- Selección de Proveedores -->
+        <div class="col">
+          <div class="card h-100 text-center servicio">
+            <div class="card-body">
+              <i class="bi bi-shop-window display-4 mb-3"></i>
+              <h2 class="card-title">Proveedores Personalizados</h2>
+              <p class="card-text">
+                Conéctate con una red diversa de proveedores que se adaptan a
+                tus gustos y estilo de vida.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Control Nutricional -->
+        <div class="col">
+          <div class="card h-100 text-center servicio">
+            <div class="card-body">
+              <i class="bi bi-heart-pulse-fill display-4 mb-3"></i>
+              <h2 class="card-title">Control Nutricional</h2>
+              <p class="card-text">
+                Sigue tu dieta con un contador de calorías y balance nutricional
+                adaptado a tus objetivos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entregas Flexibles -->
+        <div class="col">
+          <div class="card h-100 text-center servicio">
+            <div class="card-body">
+              <i class="bi bi-truck display-4 mb-3"></i>
+              <h2 class="card-title">Entrega a Domicilio</h2>
+              <p class="card-text">
+                Recibe tus comidas en el horario que prefieras, directamente en
+                tu casa u oficina.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reservas Especiales -->
+        <div class="col">
+          <div class="card h-100 text-center servicio">
+            <div class="card-body">
+              <i class="bi bi-star-fill display-4 mb-3"></i>
+              <h2 class="card-title">Comidas Especiales</h2>
+              <p class="card-text">
+                Reserva platos únicos para ocasiones especiales.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Suscripción Flexible -->
+        <div class="col">
+          <div class="card h-100 text-center servicio">
+            <div class="card-body">
+              <i class="bi bi-credit-card-2-front-fill display-4 mb-3"></i>
+              <h2 class="card-title">Planes de Suscripción</h2>
+              <p class="card-text">
+                Elige entre diferentes planes mensuales según la cantidad de
+                comidas y servicios que necesitas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-    <!-- ¿Cómo Funciona? Section -->
-    <section class="container mt-5" id="comofunciona">
-        <h1 class="text-center mb-4">¿Cómo Funciona?</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card card-dark h-100 text-center">
-                    <div class="card-body">
-                        <i class="bi bi-person-plus-fill display-4 mb-3"></i>
-                        <h2 class="card-title">Crea tu Cuenta</h2>
-                        <p class="card-text">Regístrate de manera rápida y fácil desde cualquier dispositivo para
-                            acceder a tu plan de comidas personalizado.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark h-100 text-center">
-                    <div class="card-body">
-                        <i class="bi bi-heart display-4 mb-3"></i>
-                        <h2 class="card-title">Configura tus Preferencias</h2>
-                        <p class="card-text">Indica tus gustos, restricciones alimenticias, y objetivos nutricionales
-                            para que el sistema cree el mejor plan para ti.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark h-100 text-center">
-                    <div class="card-body">
-                        <i class="bi bi-calendar-event display-4 mb-3"></i>
-                        <h2 class="card-title">Recibe tu Plan Semanal</h2>
-                        <p class="card-text">Obtén un menú semanal adaptado a tus necesidades, incluyendo desayuno,
-                            almuerzo y cena, listo para planificar.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark h-100 text-center">
-                    <div class="card-body">
-                        <i class="bi bi-cart-check display-4 mb-3"></i>
-                        <h2 class="card-title">Compra los Ingredientes</h2>
-                        <p class="card-text">Genera una lista de compras y compra tus ingredientes en tiendas locales o
-                            en línea.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark h-100 text-center">
-                    <div class="card-body">
-                        <i class="bi bi-basket display-4 mb-3"></i>
-                        <h2 class="card-title">Prepara tus Comidas</h2>
-                        <p class="card-text">Sigue las recetas y consejos nutricionales para preparar comidas deliciosas
-                            y balanceadas.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark h-100 text-center">
-                    <div class="card-body">
-                        <i class="bi bi-graph-up display-4 mb-3"></i>
-                        <h2 class="card-title">Rastrea tu Progreso</h2>
-                        <p class="card-text">Monitorea tu progreso nutricional y ajusta tus planes según tus resultados
-                            y metas.</p>
-                    </div>
-                </div>
-            </div>
+<!-- ¿Cómo Funciona? -->
+<section class="container mt-5" id="comofunciona">
+  <h1 class="text-center mb-4">¿Cómo Funciona?</h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 text-center servicio">
+        <div class="card-body">
+          <i class="bi bi-person-plus-fill display-4 mb-3"></i>
+          <h2 class="card-title">Crea tu Cuenta</h2>
+          <p class="card-text">
+            Regístrate de manera rápida y fácil desde cualquier dispositivo para acceder a tu plan de comidas personalizado.
+          </p>
         </div>
-    </section>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center servicio">
+        <div class="card-body">
+          <i class="bi bi-heart display-4 mb-3"></i>
+          <h2 class="card-title">Configura tus Preferencias</h2>
+          <p class="card-text">
+            Indica tus gustos, restricciones alimenticias, y objetivos nutricionales para que el sistema cree el mejor plan para ti.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center servicio">
+        <div class="card-body">
+          <i class="bi bi-calendar-event display-4 mb-3"></i>
+          <h2 class="card-title">Recibe tu Plan Semanal</h2>
+          <p class="card-text">
+            Obtén un menú semanal adaptado a tus necesidades, incluyendo desayuno, almuerzo y cena, listo para planificar.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center servicio">
+        <div class="card-body">
+          <i class="bi bi-cart-check display-4 mb-3"></i>
+          <h2 class="card-title">Proveedores de Confianza</h2>
+          <p class="card-text">
+            Trabajamos con cocineros independientes y restaurantes locales verificados para garantizar calidad, sabor y frescura en cada comida.
+          </p>
+        </div>
+      </div>
+    </div>    
+    <div class="col">
+      <div class="card h-100 text-center servicio">
+        <div class="card-body">
+          <i class="bi bi-basket display-4 mb-3"></i>
+          <h2 class="card-title">Recibe tus Comidas</h2>
+          <p class="card-text">
+            Disfruta tus platos listos sin cocinar. Nosotros coordinamos con los proveedores y nos encargamos de la entrega.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center servicio">
+        <div class="card-body">
+          <i class="bi bi-graph-up display-4 mb-3"></i>
+          <h2 class="card-title">Rastrea tu Progreso</h2>
+          <p class="card-text">
+            Monitorea tu progreso nutricional y ajusta tus planes según tus preferencias.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Precios Section -->
+
+    <!-- Sección de Precios -->
     <section class="container my-5" id="precios">
-        <h1 class="text-center mb-4">Precios</h1>
-        <div class="row justify-content-center g-4">
-            <!-- Plan Free -->
-            <div class="col-md-5 d-flex">
-                <div class="card text-center precio-card w-100 bg-black text-white border-white">
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <div>
-                            <h2 class="card-title">Free</h2>
-                            <h3 class="card-subtitle text-white">S/ 0.00 / mes</h3>
-                            <ul class="list-unstyled mt-5 mb-4">
-                                <li>✓ Hasta 1 plan semanal</li>
-                                <li>✓ Hasta 3 recetas por semana</li>
-                                <li>✓ Registro básico de comidas y calorías</li>
-                                <li>✓ Acceso limitado a la personalización de menús</li>
-                                <li>✓ Notificaciones básicas sobre comidas</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn btn-outline-light rounded-pill mt-5">Empieza gratis</a>
-                    </div>
-                </div>
+      <h1 class="text-center mb-4">Precios</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <!-- Plan Estándar -->
+        <div class="col d-flex">
+          <div
+            class="card text-center precio-card w-100 text-white border-green precio-f"
+          >
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h2 class="card-title nowrap">Plan Estándar</h2>
+                <h3 class="card-subtitle text-black price nowrap">
+                  S/ 400.00 / mes
+                </h3>
+                <ul class="list-unstyled mt-4 mb-4 text-start mx-auto">
+                  <li>✓ Incluye almuerzo diario</li>
+                  <li>✓ Control nutricional con contador de calorías</li>
+                  <li>✓ Acceso completo a planificación y entregas</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-outline-light rounded-pill mt-auto"
+                >Elegir plan</a
+              >
             </div>
-
-            <!-- Plan Premium -->
-            <div class="col-md-5 d-flex">
-                <div class="card text-center precio-card w-100 bg-black text-white border-white">
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <div>
-                            <h2 class="card-title">Premium</h2>
-                            <h3 class="card-subtitle mb-2 text-light">S/ 9.90 / mes</h3>
-                            <ul class="list-unstyled mt-5 mb-4">
-                                <li>✓ Planes semanales ilimitados</li>
-                                <li>✓ Acceso ilimitado a recetas personalizadas</li>
-                                <li>✓ Seguimiento completo de calorías y nutrientes</li>
-                                <li>✓ Notificaciones inteligentes sobre compras e ingredientes</li>
-                                <li>✓ Planificación avanzada de dietas (sin restricciones)</li>
-                                <li>✓ Acceso a recetas especiales y recomendaciones</li>
-                                <li>✓ Soporte al cliente prioritario</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn btn-outline-light rounded-pill mt-auto">Elegir Premium</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!-- Plan Tempranero -->
+        <div class="col d-flex">
+          <div
+            class="card text-center precio-card w-100 text-white border-green precio-f"
+          >
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h2 class="card-title nowrap">Plan Tempranero</h2>
+                <h3 class="card-subtitle text-black price nowrap">
+                  S/ 500.00 / mes
+                </h3>
+                <ul class="list-unstyled mt-4 mb-4 text-start mx-auto">
+                  <li>✓ Incluye desayuno y almuerzo</li>
+                  <li>✓ Control nutricional con contador de calorías</li>
+                  <li>✓ Acceso completo a planificación y entregas</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-outline-light rounded-pill mt-auto"
+                >Elegir plan</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan Bajadón -->
+        <div class="col d-flex">
+          <div
+            class="card text-center precio-card w-100 text-white border-green precio-f"
+          >
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h2 class="card-title nowrap">Plan Bajadón</h2>
+                <h3 class="card-subtitle text-black price nowrap">
+                  S/ 800.00 / mes
+                </h3>
+                <ul class="list-unstyled mt-4 mb-4 text-start mx-auto">
+                  <li>✓ Incluye almuerzo y cena</li>
+                  <li>✓ Control nutricional con contador de calorías</li>
+                  <li>✓ Acceso completo a planificación y entregas</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-outline-light rounded-pill mt-auto"
+                >Elegir plan</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan Full -->
+        <div class="col d-flex">
+          <div
+            class="card text-center precio-card w-100 text-white border-green precio-f"
+          >
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h2 class="card-title nowrap">Plan Full</h2>
+                <h3 class="card-subtitle text-black price nowrap">
+                  S/ 1000.00 / mes
+                </h3>
+                <ul class="list-unstyled mt-4 mb-4 text-start mx-auto">
+                  <li>✓ Incluye desayuno, almuerzo y cena</li>
+                  <li>✓ Control nutricional con contador de calorías</li>
+                  <li>✓ Acceso completo a planificación y entregas</li>
+                  <li>✓ Soporte al cliente prioritario</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-outline-light rounded-pill mt-auto"
+                >Elegir plan</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-muted mt-5">
+        *Es el precio base, los precios pueden variar de acuerdo a la selección
+        de platos.
+        <br />
+        *Hay la posibilidad de un plan cena y desayuno al mismo precio que el
+        "Tempranero"
+      </p>
     </section>
 
-    <!-- Reseñas Section -->
+    <!-- Reseñas -->
     <section class="container my-5" id="reseñas">
-        <h1 class="text-center mb-5">Reseñas</h1>
-        <div class="row g-4 justify-content-center">
-            <!-- Reseña 1 - Profesional Joven -->
-            <div class="col-lg-4 col-md-6 d-flex">
-                <div class="card p-4 bg-black text-white border-white w-100 rounded-4 shadow-lg">
-                    <div class="d-flex align-items-center mb-4">
-                        <img src="./images/random1.png" alt="Ana García" class="rounded-circle me-4" width="80"
-                            height="80">
-                        <div>
-                            <h2 class="mb-1 fs-4">Ana García</h2>
-                            <small class="text-secondary fs-6">Desarrolladora Web</small><br>
-                            <span class="text-warning fs-5">★★★★★</span>
-                        </div>
-                    </div>
-                    <p class="fs-5">"Como profesional con poco tiempo, *FoodHeaven* me ha permitido organizar mis
-                        comidas de manera rápida y saludable, sin preocuparme por planificar. ¡Es perfecto para quienes
-                        tenemos una agenda llena!"</p>
-                </div>
+      <h1 class="text-center mb-5">Reseñas</h1>
+      <div class="row g-4 justify-content-center">
+        <!-- Reseña 1 - Profesional Joven -->
+        <div class="col-lg-4 col-md-6 d-flex">
+          <div
+            class="card p-4 text-white border-white w-100 rounded-4 shadow-lg"
+          >
+            <div class="d-flex align-items-center mb-4">
+              <img
+                src="/images/resena3.jpg"
+                alt="Clara Cortés"
+                class="rounded-circle me-4"
+                width="80"
+                height="80"
+              />
+              <div>
+                <h2 class="mb-1 fs-4">Clara Cortés</h2>
+                <small class="text-secondary fs-6">Desarrolladora Web</small
+                ><br />
+                <span class="text-warning fs-5">★★★★★</span>
+              </div>
             </div>
-            <!-- Reseña 2 - Persona Interesada en Mejorar Alimentación -->
-            <div class="col-lg-4 col-md-6 d-flex">
-                <div class="card p-4 bg-black text-white border-white w-100 rounded-4 shadow-lg">
-                    <div class="d-flex align-items-center mb-4">
-                        <img src="./images/random3.png" alt="Carlos Pérez" class="rounded-circle me-4" width="80"
-                            height="80">
-                        <div>
-                            <h2 class="mb-1 fs-4">Carlos Pérez</h2>
-                            <small class="text-secondary fs-6">Padre de Familia</small><br>
-                            <span class="text-warning fs-5">★★★★☆</span>
-                        </div>
-                    </div>
-                    <p class="fs-5">"Como padre de familia, me resulta difícil organizar las comidas. *FoodHeaven* no
-                        solo me ahorra tiempo, sino que también me ayuda a planificar opciones saludables para mi
-                        familia. ¡Muy recomendable!"</p>
-                </div>
-            </div>
-            <!-- Reseña 3 - Profesional Joven -->
-            <div class="col-lg-4 col-md-6 d-flex">
-                <div class="card p-4 bg-black text-white border-white w-100 rounded-4 shadow-lg">
-                    <div class="d-flex align-items-center mb-4">
-                        <img src="./images/random2.png" alt="Martín Ruiz" class="rounded-circle me-4" width="80"
-                            height="80">
-                        <div>
-                            <h2 class="mb-1 fs-4">Martín Ruiz</h2>
-                            <small class="text-secondary fs-6">Gerente de Marketing</small><br>
-                            <span class="text-warning fs-5">★★★★★</span>
-                        </div>
-                    </div>
-                    <p class="fs-5">"Mi trabajo es demandante y siempre me resulta difícil mantenerme saludable.
-                        *FoodHeaven* me ayuda a tener un menú personalizado, nutritivo y rápido. ¡Es todo lo que
-                        necesitaba!"</p>
-                </div>
-            </div>
+            <p class="fs-5" style="color: gray">
+              Como profesional con poco tiempo, FoodHeaven me ha permitido
+              organizar mis comidas de manera rápida y saludable, sin
+              preocuparme por planificar. ¡Es perfecto para quienes tenemos una
+              agenda llena!"
+            </p>
+          </div>
         </div>
+        <!-- Reseña 2 - Padre de familia -->
+        <div class="col-lg-4 col-md-6 d-flex">
+          <div
+            class="card p-4 text-white border-white w-100 rounded-4 shadow-lg"
+          >
+            <div class="d-flex align-items-center mb-4">
+              <img
+                src="/images/resena2.jpg"
+                alt="Leonardo Mesías"
+                class="rounded-circle me-4"
+                width="80"
+                height="80"
+              />
+              <div>
+                <h2 class="mb-1 fs-4">Leonardo Mesías</h2>
+                <small class="text-secondary fs-6">Padre de Familia</small
+                ><br />
+                <span class="text-warning fs-5">★★★★☆</span>
+              </div>
+            </div>
+            <p class="fs-5" style="color: gray">
+              Como padre de familia, me resulta difícil organizar las comidas.
+              FoodHeaven no solo me ahorra tiempo, sino que también me ayuda a
+              planificar opciones saludables para mi familia. ¡Muy recomendable!
+            </p>
+          </div>
+        </div>
+        <!-- Reseña 3 - Profesional Joven -->
+        <div class="col-lg-4 col-md-6 d-flex">
+          <div
+            class="card p-4 text-white border-white w-100 rounded-4 shadow-lg"
+          >
+            <div class="d-flex align-items-center mb-4">
+              <img
+                src="/images/resena1.jpg"
+                alt="Daniel Moreno"
+                class="rounded-circle me-4"
+                width="80"
+                height="80"
+              />
+              <div>
+                <h2 class="mb-1 fs-4">Daniel Moreno</h2>
+                <small class="text-secondary fs-6">Gerente de Marketing</small
+                ><br />
+                <span class="text-warning fs-5">★★★★★</span>
+              </div>
+            </div>
+            <p class="fs-5" style="color: gray">
+              Mi trabajo es demandante y siempre me resulta difícil mantenerme
+              saludable. FoodHeaven me ayuda a tener un menú personalizado,
+              nutritivo y rápido. ¡Es todo lo que necesitaba!
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-    <!-- Contacto Section-->
+    <!-- Contacto -->
     <section class="container my-5" id="contactanos">
-        <h1 class="text-center mb-4">Contáctanos</h1>
-        <div class="row">
-            <!-- Mapa -->
-            <div class="col-md-6 mb-4 mb-md-0">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.118283054894!2d-76.96548598909544!3d-12.104054188087764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c70ab77498c1%3A0xcce9f50642e7c684!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas!5e0!3m2!1ses-419!2spe!4v1744761111521!5m2!1ses-419!2spe"
-                    width="100%" height="350" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
-
-            <!-- Formulario -->
-            <div class="col-md-6">
-                <form id="formContacto">
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="correo" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="correo" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="numero" class="form-label">Número</label>
-                        <input type="tel" class="form-control" id="numero" required>
-                    </div>
-                    <button type="submit" class="btn btn-outline-light rounded-pill w-100">Contáctanos</button>
-                </form>
-            </div>
+      <h1 class="text-center mb-4">Contáctanos</h1>
+      <div class="row">
+        <!-- Mapa -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.118283054894!2d-76.96548598909544!3d-12.104054188087764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c70ab77498c1%3A0xcce9f50642e7c684!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas!5e0!3m2!1ses-419!2spe!4v1744761111521!5m2!1ses-419!2spe"
+            width="100%"
+            height="350"
+            style="border: 0; border-radius: 12px"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
         </div>
+
+        <!-- Formulario -->
+        <div class="col-md-6">
+          <form id="formContacto">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required />
+            </div>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="correo" required />
+            </div>
+            <div class="mb-3">
+              <label for="numero" class="form-label">Número</label>
+              <input type="tel" class="form-control" id="numero" required />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-outline-light rounded-pill w-100"
+            >
+              Contáctanos
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
 
-    <footer class="bg-black text-white pt-5 pb-0 mt-5">
-        <div class="container">
-            <!-- Línea blanca que separa el footer -->
-            <hr class="border-top border-white opacity-100">
+    <footer class="bg-gray text-white pt-5 pb-0 mt-5 footer">
+      <div class="container">
+        <!-- Línea blanca que separa el footer -->
+        <hr class="border-top border-white opacity-100" />
 
-            <div class="row text-center text-md-start">
-                <!-- Redes sociales -->
-                <div class="col-md-4 mb-4">
-                    <h5>Síguenos</h5>
-                    <div class="mt-3">
-                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-4"></i></a>
-                        <a href="mailto:contacto@spliteasy.com" class="text-white"><i
-                                class="bi bi-envelope-fill fs-4"></i></a>
-                    </div>
-                </div>
-
-                <!-- Enlaces legales -->
-                <div class="col-md-4 mb-4">
-                    <h5>Información legal</h5>
-                    <ul class="list-unstyled mt-3">
-                        <li><a href="#" class="text-white text-decoration-none">Aviso legal</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Política de privacidad</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Política de cookies</a></li>
-                    </ul>
-                </div>
-
-                <!-- Soporte -->
-                <div class="col-md-4 mb-4">
-                    <h5>Soporte</h5>
-                    <ul class="list-unstyled mt-3">
-                        <li><a href="mailto:soporte@spliteasy.com" class="text-white text-decoration-none">Contacto con
-                                soporte</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Centro de ayuda</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Preguntas frecuentes</a></li>
-                    </ul>
-                </div>
+        <div class="row text-center text-md-start">
+          <!-- Redes sociales -->
+          <div class="col-md-4 mb-4">
+            <h5>Síguenos</h5>
+            <div class="mt-3">
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-facebook fs-4"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-instagram fs-4"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-twitter fs-4"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-linkedin fs-4"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="bi bi-envelope-fill fs-4"></i
+              ></a>
             </div>
-        </div>
+          </div>
 
-        <div class="bg-secundary text-center py-3 mt-4">
-            <p class="mb-0 text-white">&copy; 2025 <strong>FoodHeaven</strong>. Todos los derechos reservados.</p>
+          <!-- Enlaces legales -->
+          <div class="col-md-4 mb-4">
+            <h5>Información legal</h5>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Aviso legal</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Política de privacidad</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Política de cookies</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Soporte -->
+          <div class="col-md-4 mb-4">
+            <h5>Soporte</h5>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Contacto con soporte</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Centro de ayuda</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <div class="bg-secundary text-center py-3 mt-4">
+        <p class="mb-0 text-white">
+          &copy; 2025 <strong>FoodHeaven</strong>. Todos los derechos
+          reservados.
+        </p>
+      </div>
     </footer>
 
-    <!-- Boostrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/javascript.js"></script>
-</body>
-
+    
+  </body>
 </html>
